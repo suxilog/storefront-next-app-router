@@ -1,5 +1,4 @@
 import type { PropsWithChildren } from 'react';
-import Link from 'next/link';
 import { SfButton, SfIconExpandMore, SfIconShoppingCart } from '@storefront-ui/react';
 import { useTranslation } from 'next-i18next';
 import {
@@ -12,6 +11,7 @@ import {
   Breadcrumb,
   NarrowContainer,
   Breadcrumbs,
+  Link,
 } from '~/components';
 import { useCart } from '~/hooks';
 

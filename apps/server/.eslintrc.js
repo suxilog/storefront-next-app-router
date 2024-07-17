@@ -5,7 +5,7 @@ module.exports = {
     tsconfigRootDir: __dirname,
     sourceType: 'module',
   },
-  ignorePatterns: ['/*.*', 'lib/**/*.ts', '**/*.js'],
+  ignorePatterns: ['/*.*', 'lib/**/*.js', '**/*.js'],
   rules: {
     'unicorn/prefer-top-level-await': 'off',
   },

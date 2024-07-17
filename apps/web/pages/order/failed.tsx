@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { SfButton, SfIconArrowBack } from '@storefront-ui/react';
 import { Trans, useTranslation } from 'next-i18next';
+import { Link } from '~/components';
 import { createGetServerSideProps } from '~/helpers';
 import { OrderLayout } from '~/layouts';
 import somethingWentWrongImage from '~/public/images/something-went-wrong.svg';

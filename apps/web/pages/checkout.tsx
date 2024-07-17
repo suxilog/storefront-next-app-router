@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { SfButton, SfLink } from '@storefront-ui/react';
 import { Trans, useTranslation } from 'next-i18next';
 import {
@@ -8,6 +7,7 @@ import {
   CheckoutPayment,
   ContactInformation,
   ShippingMethod,
+  Link,
 } from '~/components';
 import { createGetServerSideProps } from '~/helpers';
 import { useCart } from '~/hooks';

@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { SfButton } from '@storefront-ui/react';
 import { useTranslation } from 'next-i18next';
+import { Link } from '~/components';
 import somethingWentWrongImage from '~/public/images/empty-category.svg';
 
 export function CategoryEmptyState(): JSX.Element {

@@ -1,9 +1,8 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { SfButton, SfRating, SfCounter, SfLink, SfIconShoppingCart } from '@storefront-ui/react';
 import classNames from 'classnames';
 import { useTranslation } from 'next-i18next';
-import type { ProductCardProps } from '~/components';
+import { type ProductCardProps, Link } from '~/components';
 
 export function ProductCard({
   name,

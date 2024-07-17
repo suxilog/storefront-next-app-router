@@ -21,4 +21,5 @@ export * from './RecommendedProducts';
 export * from './RenderContent';
 export * from './ScrollToTopButton';
 export * from './ShippingMethod';
+export * from './Link';
 export * from './ui';

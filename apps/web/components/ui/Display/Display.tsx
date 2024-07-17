@@ -1,8 +1,7 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { SfButton } from '@storefront-ui/react';
 import classNames from 'classnames';
-import type { DisplayProps } from '~/components';
+import { type DisplayProps, Link } from '~/components';
 
 export function Display({ items, ...attributes }: DisplayProps) {
   return (

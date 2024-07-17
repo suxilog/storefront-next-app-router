@@ -15,5 +15,6 @@ module.exports = {
     'unicorn/prefer-array-some': 'off',
     'sonarjs/no-duplicate-string': 'off',
     'max-statements': 'off',
+    'react/display-name': 'off',
   },
 };

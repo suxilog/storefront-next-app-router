@@ -1,8 +1,7 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { SfButton } from '@storefront-ui/react';
 import { useTranslation } from 'next-i18next';
-import { OrderSummary, CartProductCard } from '~/components';
+import { OrderSummary, CartProductCard, Link } from '~/components';
 import { useCart } from '~/hooks';
 import emptyCartImage from '~/public/images/empty-cart.svg';
 

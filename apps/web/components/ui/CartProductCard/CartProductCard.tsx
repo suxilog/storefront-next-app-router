@@ -1,8 +1,7 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { SfLink, SfIconSell } from '@storefront-ui/react';
 import { useTranslation } from 'next-i18next';
-import { QuantitySelector } from '~/components';
+import { QuantitySelector, Link } from '~/components';
 import type { CartProductCardProps } from '~/components';
 
 export function CartProductCard({

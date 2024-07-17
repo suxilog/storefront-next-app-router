@@ -1,5 +1,5 @@
 {
   "watch": ["**/*"],
   "ext": "ts",
-  "exec": "ts-node-dev src/index.ts"
+  "exec": "vite-node ./src/index.ts"
 }

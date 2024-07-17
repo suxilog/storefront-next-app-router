@@ -1,7 +1,6 @@
 import type { PropsWithChildren } from 'react';
-import Link from 'next/link';
 import { SfButton, SfIconArrowBack, SfLoaderCircular } from '@storefront-ui/react';
-import { NarrowContainer, Footer, NavbarTop } from '~/components';
+import { NarrowContainer, Footer, NavbarTop, Link } from '~/components';
 import { useCart } from '~/hooks';
 
 interface CheckoutLayoutProps extends PropsWithChildren {
