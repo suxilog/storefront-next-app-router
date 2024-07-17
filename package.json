@@ -49,5 +49,9 @@
       "path": "cz-conventional-changelog",
       "disableScopeLowerCase": true
     }
+  },
+  "resolutions": {
+    "semver": "7.6.3",
+    "axios": "0.28.0"
   }
 }
