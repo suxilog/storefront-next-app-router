@@ -2,7 +2,7 @@ import { GetServerSidePropsContext, GetServerSidePropsResult } from 'next';
 import { DehydratedState, QueryClient, dehydrate } from '@tanstack/react-query';
 import { SSRConfig } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { getSdk } from '~/sdk';
+import { getSdk } from '../sdk/sdk.server';
 import { GetServerSideEnhancedContext } from './types';
 
 interface CreateGetServerSidePropsOptions {

@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { useSdk } from '~/sdk';
+import { useSdk } from '../../sdk/sdk.provider';
 
 /**
  * Hook for getting recommended products data
@@ -8,7 +8,7 @@ import { useSdk } from '~/sdk';
 export function useProductRecommended(slug: string) {
   const sdk = useSdk();
 
-  return useQuery(['recommended', slug], () => sdk.commerce.getProductRecommended({ slug }), {
+  return useQuery(['recommended', slug], () => sdk.magento.getProductRecommended({ slug }), {
     refetchOnMount: false,
     refetchOnWindowFocus: false,
   });

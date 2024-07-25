@@ -1,5 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
-import { useSdk } from '~/sdk';
+import { useSdk } from '../../sdk/sdk.provider';
 
 /**
  * Hook for getting product reviews
@@ -8,7 +8,7 @@ import { useSdk } from '~/sdk';
 export function useProductReviews(slug: string) {
   const sdk = useSdk();
 
-  return useQuery(['reviews', slug], () => sdk.commerce.getProductReviews({ slug }), {
+  return useQuery(['reviews', slug], () => sdk.magento.getProductReviews({ slug }), {
     refetchOnMount: false,
     refetchOnWindowFocus: false,
   });

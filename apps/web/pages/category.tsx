@@ -31,7 +31,6 @@ export default function CategoryPage() {
     { name: t('allProducts'), link: '/category' },
   ];
   const { data: productsCatalog } = useProducts();
-
   if (!productsCatalog) {
     return null;
   }

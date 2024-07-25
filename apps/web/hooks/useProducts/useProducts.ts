@@ -1,11 +1,12 @@
 import { useQuery } from '@tanstack/react-query';
 import { GetProducts } from '@vue-storefront/storefront-boilerplate-sdk';
 import { GetServerSideEnhancedContext } from '~/helpers/types';
-import { useSdk } from '~/sdk';
+import { useSdk } from '../../sdk/sdk.provider';
 
 export async function prefetchProducts(context: GetServerSideEnhancedContext): Promise<GetProducts> {
   const { queryClient, sdk } = context;
-  const products = await sdk.commerce.getProducts();
+  const products = await sdk.magento.products({});
+  // console.log('prefetchProducts', products);
   queryClient.setQueryData(['products'], products);
 
   return products;
@@ -16,8 +17,8 @@ export async function prefetchProducts(context: GetServerSideEnhancedContext): P
  */
 export function useProducts() {
   const sdk = useSdk();
-
-  return useQuery(['products'], () => sdk.commerce.getProducts(), {
+  // console.log('useProducts');
+  return useQuery(['products'], () => sdk.magento.products({}), {
     refetchOnMount: false,
     refetchOnWindowFocus: false,
   });
